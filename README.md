@@ -1,64 +1,49 @@
-# Chess AI Agent
+# ♜ Agent White vs Agent Black: Chess Game
 
-![Status](https://img.shields.io/badge/Status-Active-success) ![Python](https://img.shields.io/badge/Python-3.x-blue) ![AI](https://img.shields.io/badge/AI-Agent-orange)
+### 🎓 FREE Step-by-Step Tutorial 
+**👉 [Click here to follow our complete step-by-step tutorial](https://www.theunwindai.com/p/build-a-multi-agent-chess-game) and learn how to build this from scratch with detailed code walkthroughs, explanations, and best practices.**
 
-Welcome to the **Chess AI Agent**! This project, developed by **Muhammad Amir**, features an intelligent game-playing agent capable of analyzing the board and playing chess. It provides a great environment to test, learn, and play against an autonomous AI.
+An advanced Chess game system where two AI agents play chess against each other using Autogen in a streamlit app. It is built with robust move validation and game state management.
 
-## ✨ Features
+## Features
 
-- **Intelligent AI Opponent**: Play against a smart chess agent powered by advanced algorithms for evaluation and decision making.
-- **Interactive UI**: A clear, functional, and visually appealing graphical user interface built with Pygame.
-- **Rules Enforcement**: Fully handles and enforces standard chess rules, move validation, and game state detection.
-- **Player vs AI**: Test your chess skills against the autonomous agent.
+### Multi-Agent Architecture
+- Player White: OpenAI-powered strategic decision maker
+- Player Black: OpenAI-powered tactical opponent
+- Board Proxy: Validation agent for move legality and game state
 
-## 🛠️ Tech Stack
+### Safety & Validation
+- Robust move verification system
+- Illegal move prevention
+- Real-time board state monitoring
+- Secure game progression control
 
-This project leverages the following core technologies:
-- **Python**: The main programming language used for building the game logic and AI components.
-- **Pygame**: Utilized for rendering the game board, chess pieces, screen updates, and user interaction.
-- **AI**: Implements intelligent move generation and strategic evaluation to simulate a capable opponent.
+### Strategic Gameplay
+- AI-powered position evaluation
+- Deep tactical analysis
+- Dynamic strategy adaptation
+- Complete chess ruleset implementation
 
-## 🚀 Installation & Setup
 
-Follow the instructions below to set up and run the game on your local machine.
+### How to get Started?
 
-### Prerequisites
-Make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your system.
+1. Clone the GitHub repository
 
-### Steps
+```bash
+git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
+cd ai_agent_tutorials/ai_chess_game
+```
+2. Install the required dependencies:
 
-1. **Clone the repository** or navigate to the project directory:
-   ```bash
-   # cd into your project folder
-   cd ai_chess_agent
-   ```
+```bash
+pip install -r requirements.txt
+```
+3. Get your OpenAI API Key
 
-2. **Create a Virtual Environment (Recommended)**:
-   It's generally a good practice to run your code within a Python virtual environment.
-   ```bash
-   python -m venv venv
-   
-   # Activate on Windows:
-   .\venv\Scripts\activate
-   ```
+- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
 
-3. **Install Dependencies**:
-   Install the necessary Python packages (including Pygame and any AI/Chess modules used).
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *(If Pygame isn't listed, simply run `pip install pygame`)*
+4. Run the Streamlit App
+```bash
+streamlit run ai_chess_agent.py
+```
 
-4. **Run the Game**:
-   Launch the main script to start playing!
-   ```bash
-   python ai_chess_agent.py
-   ```
-
-## 👨‍💻 Developer
-
-**Muhammad Amir**
-- Software Developer specializing in Web Technologies, App Development, and Artificial Intelligence.
-
----
-*Enjoy the game and feel free to tweak the AI logic to make the agent even stronger!*
