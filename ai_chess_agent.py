@@ -40,7 +40,7 @@ max_turns_input = st.sidebar.number_input(
     step=1
 )
 
-if max_turns_input:
+if max_turns_input != st.session_state.max_turns:
     st.session_state.max_turns = max_turns_input
     st.sidebar.success(f"Max turns of total chess moves set to {st.session_state.max_turns}!")
 
